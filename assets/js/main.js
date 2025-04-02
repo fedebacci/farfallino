@@ -22,6 +22,7 @@ if (sentence === null || sentence.length == 0 || !isNaN(parseInt(sentence))) {
 } else {
     let output = "";
 
+    // SVOLGIMENTO BASE ESERCIZIO
     // for (let i = 0; i < sentence.length; i++) {
     //     if (sentence[i] === "a" || sentence[i] === "e" || sentence[i] === "i" || sentence[i] === "o" || sentence[i] === "u") {
     //         output = `${output}${sentence[i]}f${sentence[i]}`
@@ -44,5 +45,5 @@ if (sentence === null || sentence.length == 0 || !isNaN(parseInt(sentence))) {
                 : letter;
     }
     
-    console.log(output);
+    console.log("Ecco la frase tradotta:", output);
 }
