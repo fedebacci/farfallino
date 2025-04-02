@@ -5,7 +5,7 @@
 // PROPRIETA LENGTH
 // VEDERE COME COMPORRE STRINGA POCO A POCO
 
-const sentence = prompt("Quale frase vuoi tradurre in farfallese?")
+const sentence = prompt("Quale frase vuoi tradurre in farfallese?", "Ciao")
 console.info("sentence:", sentence)
 
 if (sentence === null || sentence.length == 0 || !isNaN(parseInt(sentence))) {
