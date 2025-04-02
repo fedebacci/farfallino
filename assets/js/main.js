@@ -21,14 +21,28 @@ if (sentence === null || sentence.length == 0 || !isNaN(parseInt(sentence))) {
     window.location.reload()
 } else {
     let output = "";
-    
+
+    // for (let i = 0; i < sentence.length; i++) {
+    //     if (sentence[i] === "a" || sentence[i] === "e" || sentence[i] === "i" || sentence[i] === "o" || sentence[i] === "u") {
+    //         output = `${output}${sentence[i]}f${sentence[i]}`
+    //     } else {
+    //         output = `${output}${sentence[i]}`
+    //     }
+    // }
+
+    // OPERATORE TERNARIO (SOLUZIONE DI SAMUEL CON VARIABILE ASSEGNATA E OPERATORE TERNARIO, MIGLIORE)
     for (let i = 0; i < sentence.length; i++) {
-        if (sentence[i] === "a" || sentence[i] === "e" || sentence[i] === "i" || sentence[i] === "o" || sentence[i] === "u") {
-            output = `${output}${sentence[i]}f${sentence[i]}`
-        } else {
-            output = `${output}${sentence[i]}`
-        }
+        const letter = sentence[i];
+        // output += letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u" ? `${letter}f${letter}` : letter;
+        output +=
+            letter === "a" ||
+            letter === "e" ||
+            letter === "i" ||
+            letter === "o" ||
+            letter === "u"
+                ? `${letter}f${letter}`
+                : letter;
     }
     
-    console.log(output)
+    console.log(output);
 }
